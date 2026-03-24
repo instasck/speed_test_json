@@ -1,0 +1,9 @@
+version: "3.3"
+
+services:
+  speed-test-json:
+    build: .
+    container_name: speed-test-json
+    ports:
+      - "5858:5858"
+    restart: unless-stopped
